@@ -7,7 +7,9 @@ FROM PRODUCT
 GROUP BY PRICE_GROUP
 ORDER BY PRICE_GROUP;
 
-# -- 권장x, 경우의 수를 다 
+# FLOOR(X) : x 이하의 가장 큰 정수로 내리기 ex.FLOOR(1.5) = 1
+
+# -- 권장x, 경우의 수를 다 해야함
 # SELECT
 # CASE
 # WHEN PRICE < 10000 THEN '0'
