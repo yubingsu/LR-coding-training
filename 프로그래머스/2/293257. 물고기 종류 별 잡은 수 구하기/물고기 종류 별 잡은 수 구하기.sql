@@ -10,6 +10,7 @@ ORDER BY FISH_COUNT DESC;
 -- ----------+----------
 -- 0         | BASS
 -- 0         | BLACK_BASS
+-- ➡️ 해결 : SELECT에 포함된 FISH_NAME 기준으로 GROUP BY하기
 
 -- 만약, FISH_TYPE로도 GROUP BY를 하고 싶다면?
 -- GROUP BY N.FISH_TYPE, N.FISH_NAME
