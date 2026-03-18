@@ -1,11 +1,11 @@
--- 정답
+-- 코드를 입력하세요
 SELECT CAR_TYPE, COUNT(*) AS CARS
 FROM CAR_RENTAL_COMPANY_CAR 
 WHERE OPTIONS LIKE '%통풍시트%' 
     OR OPTIONS LIKE '%열선시트%' 
     OR OPTIONS LIKE '%가죽시트%'
 GROUP BY CAR_TYPE
-ORDER BY CAR_TYPE
+ORDER BY CAR_TYPE;
 
 # 1. 
 # VARCHAR(n) 가변길이문자열, 최대 n글자까지 작성 
@@ -16,3 +16,24 @@ ORDER BY CAR_TYPE
 # - 오류 코드 WHERE OPTION IN ('통풍시트', '열선시트', '가죽시트') : 하나의 값에 '통풍시트'하나의 요소가 있으면 반환하는 것임
 # LIKE 연산자 : 값이 **여러 문자열로 묶여있을 때** 사용
 # - %의 의미(와일드카드 문자) : 0개 이상의 문자
+
+-- IN을 활용한 오류 코드
+-- SELECT CAR_TYPE, COUNT(*) AS CARS
+-- FROM CAR_RENTAL_COMPANY_CAR
+-- WHERE OPTIONS IN ('통풍시트', '열선시트', '가죽시트')
+-- GROUP BY CAR_TYPE
+-- ORDER BY CAR_TYPE;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
